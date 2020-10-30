@@ -15,7 +15,7 @@ class ArticleLoadingState extends ArticleState {
 }
 
 class ArticleLoadedState extends ArticleState {
-  List<Articles> articles;
+  final List<Articles> articles;
 
   ArticleLoadedState({@required this.articles});
 
@@ -24,7 +24,7 @@ class ArticleLoadedState extends ArticleState {
 }
 
 class ArticleErrorState extends ArticleState {
-  String message;
+  final String message;
 
   ArticleErrorState({@required this.message});
 
